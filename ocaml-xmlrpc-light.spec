@@ -14,7 +14,8 @@ BuildRequires:  ocaml-findlib
 BuildRequires:  ocaml-xml-light-devel
 BuildRequires:  ocaml-ocamlnet-devel
 BuildRequires:  ocaml-ocamlnet-nethttpd-devel
-# ocamlnet requires ocaml-pcre-devel so this package still needs pcre*
+# ocamlnet uses ocaml-pcre
+BuildRequires:  ocaml-pcre-devel
 BuildRequires:  pcre-devel
 BuildRequires:  pcre
 BuildRequires:  dos2unix
