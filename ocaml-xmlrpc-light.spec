@@ -1,5 +1,5 @@
 Name:           ocaml-xmlrpc-light
-Version:        0.6
+Version:        0.6.1
 Release:        %mkrel 1
 Summary:        OCaml library for writing XML-RPC clients and servers
 
@@ -20,9 +20,6 @@ BuildRequires:  pcre-devel
 BuildRequires:  pcre
 BuildRequires:  dos2unix
 
-#define _use_internal_dependency_generator 0
-#define __find_requires /usr/lib/rpm/ocaml-find-requires.sh
-#define __find_provides /usr/lib/rpm/ocaml-find-provides.sh
 
 %description
 XmlRpc-Light is an XmlRpc library written in OCaml.
