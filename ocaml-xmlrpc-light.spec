@@ -7,8 +7,6 @@ Group:          Development/Other
 License:        LGPLv2 with exceptions
 URL:            http://code.google.com/p/xmlrpc-light/
 Source0:        http://xmlrpc-light.googlecode.com/files/xmlrpc-light-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
-
 BuildRequires:  ocaml >= 3.10.0
 BuildRequires:  ocaml-findlib
 BuildRequires:  ocaml-xml-light-devel
@@ -17,8 +15,7 @@ BuildRequires:  ocaml-ocamlnet-nethttpd-devel
 # ocamlnet uses ocaml-pcre
 BuildRequires:  ocaml-pcre-devel
 BuildRequires:  pcre-devel
-BuildRequires:  pcre
-BuildRequires:  dos2unix
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 
 %description
@@ -38,13 +35,9 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -n xmlrpc-light-%{version}
-dos2unix LICENSE
-dos2unix README.txt
-
 
 %build
 make
-
 
 %install
 rm -rf %{buildroot}
