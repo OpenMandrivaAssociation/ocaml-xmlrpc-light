@@ -1,6 +1,6 @@
 Name:           ocaml-xmlrpc-light
 Version:        0.6.1
-Release:        %mkrel 3
+Release:        %mkrel 4
 Summary:        OCaml library for writing XML-RPC clients and servers
 
 Group:          Development/Other
