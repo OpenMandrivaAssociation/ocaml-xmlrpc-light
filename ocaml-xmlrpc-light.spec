@@ -9,6 +9,7 @@ Group:		Development/Other
 License:	LGPLv2+ with exceptions
 Url:		http://code.google.com/p/xmlrpc-light/
 Source0:	http://xmlrpc-light.googlecode.com/files/xmlrpc-light-%{version}.tar.gz
+Patch0:		debian_patches_0002-Compile-with-ocamlnet-3.3.5.patch
 BuildRequires:	ocaml
 BuildRequires:	ocaml-findlib
 BuildRequires:	ocaml-ocamlnet-devel
@@ -49,6 +50,7 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -n xmlrpc-light-%{version}
+%patch0 -p1
 
 %build
 make
